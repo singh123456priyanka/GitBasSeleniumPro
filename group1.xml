@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="Onlyhair"></include>
+			<exclude name="Cosmetic"></exclude>
+	
+		</run>
+	</groups>
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="hairProduct.Test_WowHairCare_03"/>
+      <class name="hairProduct.Test_Loreal_02"/>
+      <class name="lipstic.Test_Lakme_02"/>
+      <class name="hairProduct.Test_pantene_04"/>
+      <class name="lipstic.Test_LoveChild_03"/>
+      <class name="hairProduct.Test_sunsilk_01"/>
+      <class name="lipstic.Test_Maybeline_01"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
